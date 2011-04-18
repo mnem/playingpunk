@@ -1,0 +1,3 @@
+[submodule "submodule-libs/flashpunk"]
+	path = submodule-libs/flashpunk
+	url = https://github.com/ChevyRay/FlashPunk.git
