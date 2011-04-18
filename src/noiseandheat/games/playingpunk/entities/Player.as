@@ -42,6 +42,9 @@ package noiseandheat.games.playingpunk.entities
             var v:Number = distance * 0.1;
 
             moveTowards(tX, tY, v);
+
+            var t:Target = collide("target", x, y) as Target;
+            if(t) t.spawn();
         }
     }
 }

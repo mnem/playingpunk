@@ -1,8 +1,9 @@
 ﻿package noiseandheat.games.playingpunk
 {
-    import noiseandheat.games.playingpunk.worlds.MyWorld;
     import net.flashpunk.Engine;
     import net.flashpunk.FP;
+
+    import noiseandheat.games.playingpunk.worlds.MyWorld;
 
     /**
      * Copyright (c) 2011 David Wagner
@@ -12,12 +13,12 @@
         public function PlayingPunkApp()
         {
             super(800, 600, 60, false);
+            FP.console.enable();
             FP.world = new MyWorld();
         }
 
         override public function init():void
         {
-            trace("FlashPunk has started successfully!");
         }
     }
 }
