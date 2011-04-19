@@ -10,7 +10,7 @@ package noiseandheat.games.playingpunk.entities
     /**
      * Copyright (c) 2011 David Wagner
      */
-    public class Player extends Entity
+    public class PlayerEntity extends Entity
     {
         protected static const JITTER:int = 33;
         protected static const HALF_JITTER:int = JITTER/2;
@@ -23,7 +23,7 @@ package noiseandheat.games.playingpunk.entities
         protected var targetY:int;
 
 
-        public function Player()
+        public function PlayerEntity()
         {
             var image:Image = new Image(R.player_png);
             image.centerOO();
@@ -60,7 +60,7 @@ package noiseandheat.games.playingpunk.entities
 
             moveTowards(tX, tY, v);
 
-            var t:Target = collide("target", x, y) as Target;
+            var t:TargetEntity = collide("target", x, y) as TargetEntity;
             if(t) t.spawn();
         }
     }

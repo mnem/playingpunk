@@ -10,7 +10,7 @@ package noiseandheat.games.playingpunk.entities
     /**
      * Copyright (c) 2011 David Wagner
      */
-    public class Target extends Entity
+    public class TargetEntity extends Entity
     {
         protected const MIN_PARTICLES:int = 50;
         protected const MAX_PARTICLES:int = 200;
@@ -18,7 +18,7 @@ package noiseandheat.games.playingpunk.entities
         protected var e:Emitter;
         protected var stoke:Boolean = true;
 
-        public function Target()
+        public function TargetEntity()
         {
             e = new Emitter(new BitmapData(3, 3), 3, 3);
             e.newType("flurry", [0]);

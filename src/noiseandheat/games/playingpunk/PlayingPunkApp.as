@@ -28,8 +28,8 @@
 
         override public function init():void
         {
-            FP.console.enable();
-            FP.log("Game size: ", width, height);
+//            FP.console.enable();
+//            FP.log("Game size: ", width, height);
         }
     }
 }
