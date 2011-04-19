@@ -8,9 +8,9 @@ package noiseandheat.games.playingpunk.worlds
     /**
      * Copyright (c) 2011 David Wagner
      */
-    public class MyWorld extends World
+    public class GameWorld extends World
     {
-        public function MyWorld()
+        public function GameWorld()
         {
             add(new Player());
             add(new Target());

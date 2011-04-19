@@ -34,13 +34,11 @@ package noiseandheat.games.playingpunk.entities
             type = "target";
 
             spawn();
-            FP.log("Target moved to ", x, y);
         }
 
         public function spawn():void
         {
             moveTo(FP.rand(FP.width - 20) + 10, FP.rand(FP.height - 20) + 10);
-            FP.log("Target moved to ", x, y);
         }
 
         override public function update():void

@@ -1,9 +1,13 @@
 ﻿package noiseandheat.games.playingpunk
 {
+    import flash.system.Capabilities;
     import net.flashpunk.Engine;
     import net.flashpunk.FP;
 
-    import noiseandheat.games.playingpunk.worlds.MyWorld;
+    import noiseandheat.games.playingpunk.worlds.GameWorld;
+
+    import flash.display.Sprite;
+    import flash.events.Event;
 
     /**
      * Copyright (c) 2011 David Wagner
@@ -13,13 +17,19 @@
     {
         public function PlayingPunkApp()
         {
-            super(480, 320, 30, false);
-            FP.console.enable();
-            FP.world = new MyWorld();
+            super(
+                Capabilities.screenResolutionX,
+                Capabilities.screenResolutionY,
+                30,
+                false);
+
+            FP.world = new GameWorld();
         }
 
         override public function init():void
         {
+            FP.console.enable();
+            FP.log("Game size: ", width, height);
         }
     }
 }

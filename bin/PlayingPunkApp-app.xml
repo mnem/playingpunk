@@ -1,11 +1,11 @@
 <application xmlns="http://ns.adobe.com/air/application/2.6">
     <id>noiseandheat.games.playingpunk.PlayingPunkApp</id>
-    <name>Horrible Histories</name>
+    <name>Playing Punk</name>
     <filename>PlayingPunkApp</filename>
-    <versionNumber>0.0.1</versionNumber>
+    <versionNumber>0.0.3</versionNumber>
     <initialWindow>
         <content>PlayingPunkApp.swf</content>
-        <aspectRatio>landscape</aspectRatio>
+        <aspectRatio>portrait</aspectRatio>
         <autoOrients>false</autoOrients>
         <fullScreen>true</fullScreen>
         <renderMode>gpu</renderMode>
