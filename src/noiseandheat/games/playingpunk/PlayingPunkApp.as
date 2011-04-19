@@ -1,13 +1,12 @@
 ﻿package noiseandheat.games.playingpunk
 {
-    import flash.system.Capabilities;
     import net.flashpunk.Engine;
     import net.flashpunk.FP;
 
     import noiseandheat.games.playingpunk.worlds.GameWorld;
 
-    import flash.display.Sprite;
-    import flash.events.Event;
+    import flash.display.StageQuality;
+    import flash.system.Capabilities;
 
     /**
      * Copyright (c) 2011 David Wagner
@@ -26,10 +25,11 @@
             FP.world = new GameWorld();
         }
 
-        override public function init():void
+        override public function setStageProperties():void
         {
-//            FP.console.enable();
-//            FP.log("Game size: ", width, height);
+            super.setStageProperties();
+
+            stage.quality = StageQuality.LOW;
         }
     }
 }

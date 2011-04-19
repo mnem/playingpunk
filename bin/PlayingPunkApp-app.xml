@@ -2,7 +2,7 @@
     <id>noiseandheat.games.playingpunk.PlayingPunkApp</id>
     <name>Playing Punk</name>
     <filename>PlayingPunkApp</filename>
-    <versionNumber>0.0.4</versionNumber>
+    <versionNumber>0.0.6</versionNumber>
     <initialWindow>
         <content>PlayingPunkApp.swf</content>
         <aspectRatio>portrait</aspectRatio>
