@@ -12,7 +12,7 @@ package noiseandheat.games.playingpunk.entities
      */
     public class PlayerEntity extends Entity
     {
-        protected static const JITTER:int = 33;
+        protected static const JITTER:int = 132;
         protected static const HALF_JITTER:int = JITTER/2;
 
         protected var jitterX:int;
@@ -39,11 +39,6 @@ package noiseandheat.games.playingpunk.entities
             {
                 targetX = Input.mouseX;
                 targetY = Input.mouseY;
-            }
-            else if(Input.mouseReleased)
-            {
-                targetX = x;
-                targetY = y;
             }
 
             if(--jitterUpdate <= 0)

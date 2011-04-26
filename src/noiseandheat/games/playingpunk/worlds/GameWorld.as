@@ -14,9 +14,11 @@ package noiseandheat.games.playingpunk.worlds
 
         public function GameWorld()
         {
-            add(new PlayerEntity());
-            add(new TargetEntity());
             add(new FramerateVisualiserEntity());
+            add(new TargetEntity());
+
+            for(var i:int = 0; i < 100; i++)
+                add(new PlayerEntity());
         }
     }
 }

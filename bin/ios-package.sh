@@ -1,7 +1,8 @@
 #!/bin/bash
 TARGET=ipa-debug
-KEYSTORE=~/Downloads/dww-iphone.p12
-PROVISIONING=~/Downloads/Flash_Profile.mobileprovision
+SIGNING_ROOT=~/Mobile_Flash
+KEYSTORE=$SIGNING_ROOT/dww-iphone.p12
+PROVISIONING=$SIGNING_ROOT/Flash_Profile.mobileprovision
 HOST_IP=127.0.0.1
 DESCRIPTOR=PlayingPunkApp-app.xml
 OUTPUT_NAME=PlayingPunkApp.ipa

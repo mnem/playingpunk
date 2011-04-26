@@ -11,7 +11,7 @@
     /**
      * Copyright (c) 2011 David Wagner
      */
-    [SWF(backgroundColor="#000000", frameRate="30", width="480", height="320")]
+    [SWF(backgroundColor="#000000", frameRate="60", width="480", height="320")]
     public class PlayingPunkApp extends Engine
     {
         public function PlayingPunkApp()
@@ -19,7 +19,7 @@
             super(
                 Capabilities.screenResolutionX,
                 Capabilities.screenResolutionY,
-                30,
+                60,
                 false);
 
             FP.world = new GameWorld();
